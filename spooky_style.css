@@ -1,0 +1,49 @@
+body{
+    font-family: 'Roboto Slab', serif;
+    background-color: #B6B160;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    font-family: 'Roboto Slab', serif;
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.widget {
+    margin: 5%;
+    padding: 10%;
+    border-radius: 5px;
+    color: #333333;
+    background-color: white;
+}
+
+.LED {
+    /*Credit: https://codepen.io/jnbruno/pen/vNpPpW*/
+    width: 30px;
+    height: 30px;
+    padding: 6px 0px;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 1.42857;
+}
+
+.red {
+    background-color: #D94452;
+}
+
+.green {
+    background-color: #89C053;
+}
+
+.pumpkin {
+    text-align: center
+}
