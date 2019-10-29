@@ -1,49 +1,75 @@
-body{
-    font-family: 'Roboto Slab', serif;
-    background-color: #B6B160;
+:root {
+    --gastly-gray: #333333;
+    --goulish-green: #B6B160;
+    --ghost: #DDD4C0;
+    --pumpkin: orangered;
+    --purple-people-eater: #663399;
 }
 
-p {
+body{
+    font-family: 'Roboto Slab', serif;
+    background-color: var(--goulish-green);
+}
+
+p, tbody {
     font-family: 'Roboto', sans-serif;
 }
 
 h1 {
     font-family: 'Roboto Slab', serif;
+    font-size: 16px;
 }
 
 h2 {
     font-weight: bold;
-    font-size: 1rem;
+    font-size: 1.5rem;
+    margin: 3px;
     font-family: 'Roboto', sans-serif;
 }
 
-.widget {
-    margin: 5%;
-    padding: 10%;
-    border-radius: 5px;
-    color: #333333;
-    background-color: white;
+.widget-top, .widget-bottom {
+    padding: 2%;
+    color: var(--gastly-gray);
 }
 
-.LED {
-    /*Credit: https://codepen.io/jnbruno/pen/vNpPpW*/
-    width: 30px;
-    height: 30px;
-    padding: 6px 0px;
-    border-radius: 15px;
+.widget-top {
+    /* Left-top top-right bottom-right bottom-left*/
+    border-radius: 10px 10px 0px 0px;
+    background-color: var(--pumpkin);
+}
+
+.widget-bottom {
+    /* Left-top top-right bottom-right bottom-left*/
+    border-radius: 0px 0px 10px 10px;
+    background-color: var(--ghost);
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
     text-align: center;
-    font-size: 12px;
-    line-height: 1.42857;
+    margin-top: 15px;
+    padding-bottom: 10px;
+    color: var(--purple-people-eater);
 }
 
-.red {
-    background-color: #D94452;
+.banner {
+    margin: 8% 0px 2.5% 0%;
+    
 }
 
-.green {
-    background-color: #89C053;
+.banner-text {
+    font-size: 3rem;
+    display: flex;
+    color: var(--gastly-gray);
+    font-weight: bold;
+    text-shadow: 3px 3px #837E2D;
+    padding-top: 4px;
 }
 
-.pumpkin {
-    text-align: center
+.icon-cobweb {
+    font-size: 2rem;
 }
