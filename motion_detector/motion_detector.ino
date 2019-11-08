@@ -1,4 +1,8 @@
 #include <ESP8266WiFi.h>
+#include <FirebaseArduino.h>
+   
+#define FIREBASE_HOST "iotpumpkin.firebaseio.com"                         //database api url
+#define FIREBASE_AUTH "2f7uLyqTNKePr6oglrKCtM8A3hxJKpSrHOccEhjv"
 
 // Global variables
 const int trigPin = 16;
@@ -22,6 +26,9 @@ void setup()
   Serial.print("Connected, IP address: ");
   Serial.println(WiFi.localIP());
 
+  Firebase.begin(FIREBASE_HOST, FIREBASE_AUTH);             //connect to Database
+  delay(1000);
+
   pinMode(trigPin, OUTPUT); // Sets the trigPin as an Output
   pinMode(echoPin, INPUT); // Sets the echoPin as an Input
 }
@@ -44,12 +51,24 @@ void loop() {
   
   // Calculating the distance
   cm = microsecondsToCentimeters(duration);
-  
-  // Prints the distance on the Serial Monitor
-  Serial.print("Distance: ");
+  Serial.println("Distance: ");
   Serial.println(cm);
+  if(cm <= 20){
+    Firebase.setString("status", "ALERT");
+    if (Firebase.failed()) {
+      Serial.println("Firebase set failed");
+      Serial.println(Firebase.error());
+      return;
+    }
+    else{
+      Serial.println("ALERT!");
+    }
+  }
+  else {
+    Firebase.setString("status", "IDLE"); 
+  }
 
-  delay(1000);
+  delay(500);
 }
 
 
@@ -57,6 +76,5 @@ long microsecondsToCentimeters(long microseconds) {
   // The speed of sound is 340 m/s or 29 microseconds per centimeter.
   // The ping travels out and back, so to find the distance of the object we
   // take half of the distance travelled.
-  Serial.println("Entered ms to cm function");
   return microseconds / 29 / 2;
 }
