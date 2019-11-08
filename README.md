@@ -10,3 +10,4 @@ A simple IoT Pumpkin to kick off Halloween :jack_o_lantern:
 4. [Arduino to Android , Real Time Communication For IoT with Firebase](https://medium.com/coinmonks/arduino-to-android-real-time-communication-for-iot-with-firebase-60df579f962)
 5. [Firebase Ardunio Github](https://github.com/FirebaseExtended/firebase-arduino)
 6. [Stack Overflow: ArduinoJson.h: No such file or directory (Arduino)](https://stackoverflow.com/questions/50543488/arduinojson-h-no-such-file-or-directory-arduino)
+7. [Stack Overflow: Connecting Arduino Node-MCU with Google Firebase Using Arduino IDE](https://stackoverflow.com/questions/55283004/connecting-arduino-node-mcu-with-google-firebase-using-arduino-ide?rq=1)
