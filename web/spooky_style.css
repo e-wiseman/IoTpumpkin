@@ -1,0 +1,75 @@
+:root {
+    --gastly-gray: #333333;
+    --goulish-green: #B6B160;
+    --ghost: #DDD4C0;
+    --pumpkin: orangered;
+    --purple-people-eater: #663399;
+}
+
+body{
+    font-family: 'Roboto Slab', serif;
+    background-color: var(--goulish-green);
+}
+
+p, tbody {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 16px;
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin: 3px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.widget-top, .widget-bottom {
+    padding: 2%;
+    color: var(--gastly-gray);
+}
+
+.widget-top {
+    /* Left-top top-right bottom-right bottom-left*/
+    border-radius: 10px 10px 0px 0px;
+    background-color: var(--pumpkin);
+}
+
+.widget-bottom {
+    /* Left-top top-right bottom-right bottom-left*/
+    border-radius: 0px 0px 10px 10px;
+    background-color: var(--ghost);
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    margin-top: 15px;
+    padding-bottom: 10px;
+    color: var(--purple-people-eater);
+}
+
+.banner {
+    margin: 8% 0px 2.5% 0%;
+    
+}
+
+.banner-text {
+    font-size: 3rem;
+    display: flex;
+    color: var(--gastly-gray);
+    font-weight: bold;
+    text-shadow: 3px 3px #837E2D;
+    padding-top: 4px;
+}
+
+.icon-cobweb {
+    font-size: 2rem;
+}
