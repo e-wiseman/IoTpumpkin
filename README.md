@@ -8,4 +8,5 @@ A simple IoT Pumpkin to kick off Halloween :jack_o_lantern:
 2. [Distance Sensor Ardunio Tutorial](http://www.arduino.cc/en/Tutorial/Ping)
 3. [ESP8266WiFi library](https://arduino-esp8266.readthedocs.io/en/2.5.2/esp8266wifi/readme.html)
 4. [Arduino to Android , Real Time Communication For IoT with Firebase](https://medium.com/coinmonks/arduino-to-android-real-time-communication-for-iot-with-firebase-60df579f962)
-5. https://github.com/FirebaseExtended/firebase-arduino
+5. [Firebase Ardunio Github](https://github.com/FirebaseExtended/firebase-arduino)
+6. [Stack Overflow: ArduinoJson.h: No such file or directory (Arduino)](https://stackoverflow.com/questions/50543488/arduinojson-h-no-such-file-or-directory-arduino)
