@@ -2,8 +2,7 @@
     --gastly-gray: #333333;
     --goulish-green: #B6B160;
     --ghost: #DDD4C0;
-    --pumpkin: orangered;
-    --purple-people-eater: #663399;
+    --purple-people-eater: #4a148c;
 }
 
 body{
@@ -11,37 +10,12 @@ body{
     background-color: var(--goulish-green);
 }
 
-p, tbody {
-    font-family: 'Roboto', sans-serif;
+p {
+    font-family: 'Roboto', sans-serif
 }
 
-h1 {
-    font-family: 'Roboto Slab', serif;
-    font-size: 16px;
-}
-
-h2 {
-    font-weight: bold;
-    font-size: 1.5rem;
-    margin: 3px;
-    font-family: 'Roboto', sans-serif;
-}
-
-.widget-top, .widget-bottom {
-    padding: 2%;
-    color: var(--gastly-gray);
-}
-
-.widget-top {
-    /* Left-top top-right bottom-right bottom-left*/
-    border-radius: 10px 10px 0px 0px;
-    background-color: var(--pumpkin);
-}
-
-.widget-bottom {
-    /* Left-top top-right bottom-right bottom-left*/
-    border-radius: 0px 0px 10px 10px;
-    background-color: var(--ghost);
+.space {
+    margin-top: 15%;
 }
 
 footer {
@@ -57,19 +31,50 @@ footer {
 }
 
 .banner {
-    margin: 8% 0px 2.5% 0%;
-    
+    display: flex;
 }
 
 .banner-text {
-    font-size: 3rem;
-    display: flex;
     color: var(--gastly-gray);
     font-weight: bold;
     text-shadow: 3px 3px #837E2D;
     padding-top: 4px;
+    display: flex;
 }
 
-.icon-cobweb {
-    font-size: 2rem;
+@media only screen and (max-width: 600px) {
+    #pumpkin { 
+        height: 115px;
+        width: 115px;
+        align-self: center;
+     }
+     h1 { 
+         font-size:  35px; 
+         text-align: center;
+        }
+    .banner { flex-direction: column; }
+}
+
+@media only screen and (min-width: 600px) {
+    #pumpkin { 
+        height: 60px;
+    }
+    h1 { font-size:  50px; }
+    .banner { flex-direction: row; }
+}
+
+#alert {
+    font-size: 2em;
+    color: #b71c1c;
+    border: 1px solid #b71c1c;
+    border-radius: 8px;
+    background-color: #ef5350;
+}
+
+#idle {
+    font-size: 2em;
+    color: var(--purple-people-eater);
+    border: 1px solid var(--purple-people-eater);
+    border-radius: 8px;
+    background-color: #ba68c8;
 }
