@@ -20,7 +20,7 @@ A simple IoT Pumpkin to kick off Halloween :jack_o_lantern:
 
 ## In Action!
 Yay! It's working! 
-![ ](https://gph.is/g/4wMYqj8)
+![ ](https://media.giphy.com/media/lT48wY1bumcZdff8NF/200w_d.gif)
 
 All dolled up!
 ![webpage](https://a.icons8.com/amWdoXch/wPnqvt/image.png)
