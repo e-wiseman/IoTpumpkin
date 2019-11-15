@@ -19,10 +19,12 @@ A simple IoT Pumpkin to kick off Halloween :jack_o_lantern:
 *under construction* :construction:
 
 ## In Action!
-Yay! It's working! 
+__Yay! It's working!__ 
+
 ![ ](https://media.giphy.com/media/lT48wY1bumcZdff8NF/200w_d.gif)
 
-All dolled up!
+__All dolled up!__
+
 ![webpage](https://a.icons8.com/amWdoXch/wPnqvt/image.png)
 
 ## References :books:
